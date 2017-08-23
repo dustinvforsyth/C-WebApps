@@ -1,0 +1,6 @@
+D:\Dustin Documents\C# Web App test\DatesandTimes\DatesandTimes\bin\Debug\DatesandTimes.exe.config
+D:\Dustin Documents\C# Web App test\DatesandTimes\DatesandTimes\bin\Debug\DatesandTimes.exe
+D:\Dustin Documents\C# Web App test\DatesandTimes\DatesandTimes\bin\Debug\DatesandTimes.pdb
+D:\Dustin Documents\C# Web App test\DatesandTimes\DatesandTimes\obj\Debug\DatesandTimes.csprojResolveAssemblyReference.cache
+D:\Dustin Documents\C# Web App test\DatesandTimes\DatesandTimes\obj\Debug\DatesandTimes.exe
+D:\Dustin Documents\C# Web App test\DatesandTimes\DatesandTimes\obj\Debug\DatesandTimes.pdb

@@ -1,0 +1,6 @@
+D:\Dustin Documents\C# Web App test\HelperMethods\HelperMethods\bin\Debug\HelperMethods.exe.config
+D:\Dustin Documents\C# Web App test\HelperMethods\HelperMethods\obj\Debug\HelperMethods.csprojResolveAssemblyReference.cache
+D:\Dustin Documents\C# Web App test\HelperMethods\HelperMethods\bin\Debug\HelperMethods.exe
+D:\Dustin Documents\C# Web App test\HelperMethods\HelperMethods\bin\Debug\HelperMethods.pdb
+D:\Dustin Documents\C# Web App test\HelperMethods\HelperMethods\obj\Debug\HelperMethods.exe
+D:\Dustin Documents\C# Web App test\HelperMethods\HelperMethods\obj\Debug\HelperMethods.pdb

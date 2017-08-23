@@ -1,0 +1,64 @@
+﻿<div home-state controller="app.components.HomeState">
+    <style component="css-helpers"></style>
+    <style>
+        [home-hamburger-menu] {
+            width: 250px;
+            height: 100px;
+            font-size: 16px;
+            position: relative;
+        }
+
+        [two-column-left-overlay-right-column-non-clickagle-region] {
+            z-index: 0 !important;
+        }
+        [home-search] {
+            position: absolute;
+            width: 365px;
+            top: 163px;
+            margin-right:10px;
+        }
+        [menu-link]{
+            position:relative;
+            font-size: 20px;
+            padding: 20px;
+            width:inherit;
+            text-align: left !important;
+        }
+    </style>
+    <!--<div component="toolbar">
+        <div>Southern Utah Physical Therapy and Rehabilitation</div>
+        <div>
+        <div home-search title="search" tag="search-box" component="input" label="Search..."></div>
+        </div>
+    </div>-->
+    <div tag="two-column-left-overlay" component="two-column-left-overlay">
+        <div home-hamburger-menu class="background-light" style="height:100%; min-height:300px">
+            <div class="background-primary extra-padding clearfix extra-margin-bottom">
+                <div class="text-primary">Test Menu</div>
+            </div>
+            <div>&nbsp;</div>
+            <div menu-link tag="inventoryButton" component="flat-button" dark-theme>Inventory</div>
+            <div menu-link tag="newHireButton" component="flat-button" dark-theme>New Hire Info</div>
+            <div menu-link tag="resourcesButton" component="flat-button" dark-theme>Resources/Apps</div>
+            <div menu-link tag="scheduleButton" component="flat-button"dark-theme>Schedule</div>
+        </div>
+        <div component="state-manager" tag="state-manager" class="absolute-fill-parent overflow-hidden">
+            <div component="lazy-load-state" lazy-load="main-state" lazy-load-class="absolute-fill-parent" class="absolute-fill-parent" name="main-state">
+                <div component="preloader-circle-view"></div>
+            </div>
+            <div component="lazy-load-state" lazy-load="inventory-state" name="inventory-state" lazy-load-class="absolute-fill-parent" class="absolute-fill-parent">
+                <div component="preloader-circle-view"></div>
+            </div>
+            <div component="lazy-load-state" lazy-load="newHire-state" name="newHire-state" lazy-load-class="absolute-fill-parent" class="absolute-fill-parent">
+                <div component="preloader-circle-view"></div>
+            </div>
+            <div component="lazy-load-state" lazy-load="resources-state" name="resources-state" lazy-load-class="absolute-fill-parent" class="absolute-fill-parent">
+                <div component="preloader-circle-view"></div>
+            </div>
+            <div component="lazy-load-state" lazy-load="schedule-state" name="schedule-state" lazy-load-class="absolute-fill-parent" class="absolute-fill-parent">
+                <div component="preloader-circle-view"></div>
+            </div>
+        </div>
+    </div>
+</div>
+

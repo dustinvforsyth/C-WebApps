@@ -1,0 +1,1 @@
+D:\Dustin Documents\C# Web App test\NamespacesAndReferencingAssemblies\NamespacesAndReferencingAssemblies\bin\Debug\NamespacesAndReferencingAssemblies.exe.config

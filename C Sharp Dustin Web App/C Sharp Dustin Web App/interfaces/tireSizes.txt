@@ -1,0 +1,34 @@
+Here's the formula for determining the diameter of a tire based on the
+standard size designations:
+
+Diameter (in inches) = (2 * tire-width * aspect ratio / 25.4 ) + wheel rim size
+
+The division by 25.4 is to convert mm to inches.
+
+Using 205/60-15 as an example:
+
+	Tire width 	= 205 mm
+	Aspect Ratio 	= 60 (sidewall height is 60% of tire width)
+			  or 0.6 * 205 = 123 mm
+
+	Wheel rim dia.	= 15 inches
+
+So the diameter of a 205/60-15 tire is = (2*205*0.6/25.4) + 15 = 24.69 inches
+
+I have a simple C program that calculates tire sizes and gives a comparison
+of the relative differences. I picked this up from an internet site a
+while back. If anyone wants it I can email it to them, or we can put it
+up on the quattro archive.
+
+Here's the output of that program for the tire sizes that Glenn is
+considering:
+
+% tire.x 185/60-14 195/55-14 205/55-14
+Specification  Sidewall  Radius  Diameter  Circumference  Revs/Mile  Difference
+185/60-14         4.4in  11.4in    22.7in         71.4in        887        0.0%
+195/55-14         4.2in  11.2in    22.4in         70.5in        899       -1.3%
+205/55-14         4.4in  11.4in    22.9in         71.9in        882        0.6%
+
+The "Difference" column lists the % difference in size compared to the
+firstr tire. So, either of the last two tires can be used since the difference
+in diameter is minimal.

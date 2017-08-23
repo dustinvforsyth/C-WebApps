@@ -1,0 +1,14 @@
+D:\Dustin Documents\C# Web App test\wpfEvents\wpfEvents\bin\Debug\wpfEvents.exe.config
+D:\Dustin Documents\C# Web App test\wpfEvents\wpfEvents\bin\Debug\wpfEvents.exe
+D:\Dustin Documents\C# Web App test\wpfEvents\wpfEvents\bin\Debug\wpfEvents.pdb
+D:\Dustin Documents\C# Web App test\wpfEvents\wpfEvents\obj\Debug\wpfEvents.csprojResolveAssemblyReference.cache
+D:\Dustin Documents\C# Web App test\wpfEvents\wpfEvents\obj\Debug\MainWindow.g.cs
+D:\Dustin Documents\C# Web App test\wpfEvents\wpfEvents\obj\Debug\App.g.cs
+D:\Dustin Documents\C# Web App test\wpfEvents\wpfEvents\obj\Debug\wpfEvents_MarkupCompile.cache
+D:\Dustin Documents\C# Web App test\wpfEvents\wpfEvents\obj\Debug\wpfEvents_MarkupCompile.lref
+D:\Dustin Documents\C# Web App test\wpfEvents\wpfEvents\obj\Debug\MainWindow.baml
+D:\Dustin Documents\C# Web App test\wpfEvents\wpfEvents\obj\Debug\wpfEvents.g.resources
+D:\Dustin Documents\C# Web App test\wpfEvents\wpfEvents\obj\Debug\wpfEvents.Properties.Resources.resources
+D:\Dustin Documents\C# Web App test\wpfEvents\wpfEvents\obj\Debug\wpfEvents.csproj.GenerateResource.Cache
+D:\Dustin Documents\C# Web App test\wpfEvents\wpfEvents\obj\Debug\wpfEvents.exe
+D:\Dustin Documents\C# Web App test\wpfEvents\wpfEvents\obj\Debug\wpfEvents.pdb

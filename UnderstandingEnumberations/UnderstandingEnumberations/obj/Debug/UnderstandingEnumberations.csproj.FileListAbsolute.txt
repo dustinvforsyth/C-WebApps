@@ -1,0 +1,6 @@
+D:\Dustin Documents\C# Web App test\UnderstandingEnumberations\UnderstandingEnumberations\bin\Debug\UnderstandingEnumberations.exe.config
+D:\Dustin Documents\C# Web App test\UnderstandingEnumberations\UnderstandingEnumberations\bin\Debug\UnderstandingEnumberations.exe
+D:\Dustin Documents\C# Web App test\UnderstandingEnumberations\UnderstandingEnumberations\bin\Debug\UnderstandingEnumberations.pdb
+D:\Dustin Documents\C# Web App test\UnderstandingEnumberations\UnderstandingEnumberations\obj\Debug\UnderstandingEnumberations.csprojResolveAssemblyReference.cache
+D:\Dustin Documents\C# Web App test\UnderstandingEnumberations\UnderstandingEnumberations\obj\Debug\UnderstandingEnumberations.exe
+D:\Dustin Documents\C# Web App test\UnderstandingEnumberations\UnderstandingEnumberations\obj\Debug\UnderstandingEnumberations.pdb

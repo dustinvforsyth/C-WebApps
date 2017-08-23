@@ -1,0 +1,10 @@
+{
+  "name": "CompanyInventory",
+  "version": "0.0.0",
+  "description": "CompanyInventory",
+  "main": "server.js",
+  "author": {
+    "name": "dustin-forsyth",
+    "email": ""
+  }
+}

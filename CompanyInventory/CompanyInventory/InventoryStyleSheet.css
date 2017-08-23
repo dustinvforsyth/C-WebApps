@@ -1,0 +1,18 @@
+﻿body {
+}
+    h1 {
+        color:dimgrey;
+        font-family: Courier;
+        font-size:48px;
+        padding: 250px;
+       }
+    #nav {
+
+    }
+    #Footer {
+        color:dimgray;
+        font-family: Courier;
+        font-size:18px;
+        padding:50px;
+    }
+

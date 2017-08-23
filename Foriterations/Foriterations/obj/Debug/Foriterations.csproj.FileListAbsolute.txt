@@ -1,0 +1,6 @@
+D:\Dustin Documents\C# Web App test\Foriterations\Foriterations\bin\Debug\Foriterations.exe.config
+D:\Dustin Documents\C# Web App test\Foriterations\Foriterations\bin\Debug\Foriterations.exe
+D:\Dustin Documents\C# Web App test\Foriterations\Foriterations\bin\Debug\Foriterations.pdb
+D:\Dustin Documents\C# Web App test\Foriterations\Foriterations\obj\Debug\Foriterations.csprojResolveAssemblyReference.cache
+D:\Dustin Documents\C# Web App test\Foriterations\Foriterations\obj\Debug\Foriterations.exe
+D:\Dustin Documents\C# Web App test\Foriterations\Foriterations\obj\Debug\Foriterations.pdb

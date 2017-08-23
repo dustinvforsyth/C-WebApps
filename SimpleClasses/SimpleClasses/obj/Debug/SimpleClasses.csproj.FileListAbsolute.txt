@@ -1,0 +1,6 @@
+D:\Dustin Documents\C# Web App test\SimpleClasses\SimpleClasses\bin\Debug\SimpleClasses.exe.config
+D:\Dustin Documents\C# Web App test\SimpleClasses\SimpleClasses\bin\Debug\SimpleClasses.exe
+D:\Dustin Documents\C# Web App test\SimpleClasses\SimpleClasses\bin\Debug\SimpleClasses.pdb
+D:\Dustin Documents\C# Web App test\SimpleClasses\SimpleClasses\obj\Debug\SimpleClasses.csprojResolveAssemblyReference.cache
+D:\Dustin Documents\C# Web App test\SimpleClasses\SimpleClasses\obj\Debug\SimpleClasses.exe
+D:\Dustin Documents\C# Web App test\SimpleClasses\SimpleClasses\obj\Debug\SimpleClasses.pdb

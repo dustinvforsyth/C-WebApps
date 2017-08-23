@@ -1,0 +1,602 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{430DEBF0-FDD9-40FB-841A-CE311BE58874}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Calculator</RootNamespace>
+    <AssemblyName>Calculator</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\EmbedButton.html" />
+    <Content Include="app\Main.html" />
+    <Content Include="app\Main.js" />
+    <Content Include="packages.config" />
+    <Content Include="model\app-config.json" />
+    <Content Include="model\components.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\Calculator.js" />
+    <Content Include="index.html" />
+    <Content Include="lib\BASE\Array\convertToArray.js" />
+    <Content Include="lib\BASE\Array\isArray.js" />
+    <Content Include="lib\BASE\Array\prototype\asQueryable.js" />
+    <Content Include="lib\BASE\Array\prototype\empty.js" />
+    <Content Include="lib\BASE\Array\prototype\every.js" />
+    <Content Include="lib\BASE\Array\prototype\except.js" />
+    <Content Include="lib\BASE\Array\prototype\filter.js" />
+    <Content Include="lib\BASE\Array\prototype\firstOrDefault.js" />
+    <Content Include="lib\BASE\Array\prototype\forEach.js" />
+    <Content Include="lib\BASE\Array\prototype\indexOf.js" />
+    <Content Include="lib\BASE\Array\prototype\indexOfByFunction.js" />
+    <Content Include="lib\BASE\Array\prototype\intersect.js" />
+    <Content Include="lib\BASE\Array\prototype\lastIndexOf.js" />
+    <Content Include="lib\BASE\Array\prototype\lastIndexOfByFunction.js" />
+    <Content Include="lib\BASE\Array\prototype\map.js" />
+    <Content Include="lib\BASE\Array\prototype\orderBy.js" />
+    <Content Include="lib\BASE\Array\prototype\orderByDesc.js" />
+    <Content Include="lib\BASE\Array\prototype\reduce.js" />
+    <Content Include="lib\BASE\Array\prototype\reduceRight.js" />
+    <Content Include="lib\BASE\Array\prototype\some.js" />
+    <Content Include="lib\BASE\Array\prototype\union.js" />
+    <Content Include="lib\BASE\Array\prototype\where.js" />
+    <Content Include="lib\BASE\BASE.js" />
+    <Content Include="lib\BASE\BASE\async\Continuation.js" />
+    <Content Include="lib\BASE\BASE\async\delay.js" />
+    <Content Include="lib\BASE\BASE\async\delayAsync.js" />
+    <Content Include="lib\BASE\BASE\async\Future\prototype\toContinuation.js" />
+    <Content Include="lib\BASE\BASE\async\getTimer.js" />
+    <Content Include="lib\BASE\BASE\async\Sequence.js" />
+    <Content Include="lib\BASE\BASE\async\Task.js" />
+    <Content Include="lib\BASE\BASE\collections\Hashmap.js" />
+    <Content Include="lib\BASE\BASE\collections\MultiKeyMap.js" />
+    <Content Include="lib\BASE\BASE\collections\ObservableArray.js" />
+    <Content Include="lib\BASE\BASE\collections\ObservableHashmap.js" />
+    <Content Include="lib\BASE\BASE\data\ChangeTracker.js" />
+    <Content Include="lib\BASE\BASE\data\databases\Sqlite.js" />
+    <Content Include="lib\BASE\BASE\data\DataContext.js" />
+    <Content Include="lib\BASE\BASE\data\DataSet.js" />
+    <Content Include="lib\BASE\BASE\data\DataStore.js" />
+    <Content Include="lib\BASE\BASE\data\dataStores\IndexedDbDataStore.js" />
+    <Content Include="lib\BASE\BASE\data\dataStores\InMemoryDataStore.js" />
+    <Content Include="lib\BASE\BASE\data\dataStores\LocalStorageDataStore.js" />
+    <Content Include="lib\BASE\BASE\data\dataStores\ODataDataStore.js" />
+    <Content Include="lib\BASE\BASE\data\dataStores\SqliteDataStore.js" />
+    <Content Include="lib\BASE\BASE\data\dataStores\SqlStatementCreator.js" />
+    <Content Include="lib\BASE\BASE\data\Edm.js" />
+    <Content Include="lib\BASE\BASE\data\Entity.js" />
+    <Content Include="lib\BASE\BASE\data\hooks\cascadeDelete.js" />
+    <Content Include="lib\BASE\BASE\data\inflection.js" />
+    <Content Include="lib\BASE\BASE\data\Orm.js" />
+    <Content Include="lib\BASE\BASE\data\PrimitiveHandler.js" />
+    <Content Include="lib\BASE\BASE\data\primitiveHandlers\ODataPrimitiveHandler.js" />
+    <Content Include="lib\BASE\BASE\data\responses\AddedResponse.js" />
+    <Content Include="lib\BASE\BASE\data\responses\ConnectionErrorResponse.js" />
+    <Content Include="lib\BASE\BASE\data\responses\EntityNotFoundErrorResponse.js" />
+    <Content Include="lib\BASE\BASE\data\responses\ErrorResponse.js" />
+    <Content Include="lib\BASE\BASE\data\responses\ForbiddenErrorResponse.js" />
+    <Content Include="lib\BASE\BASE\data\responses\RemovedResponse.js" />
+    <Content Include="lib\BASE\BASE\data\responses\ServiceResponse.js" />
+    <Content Include="lib\BASE\BASE\data\responses\UnauthorizedErrorResponse.js" />
+    <Content Include="lib\BASE\BASE\data\responses\UpdatedResponse.js" />
+    <Content Include="lib\BASE\BASE\data\responses\ValidationErrorResponse.js" />
+    <Content Include="lib\BASE\BASE\data\Service.js" />
+    <Content Include="lib\BASE\BASE\data\services\DataStoreBackedService.js" />
+    <Content Include="lib\BASE\BASE\data\services\IndexedDbService.js" />
+    <Content Include="lib\BASE\BASE\data\services\InMemoryService.js" />
+    <Content Include="lib\BASE\BASE\data\services\SqliteService.js" />
+    <Content Include="lib\BASE\BASE\data\Syncer.js" />
+    <Content Include="lib\BASE\BASE\data\sync\ChangeTracker.js" />
+    <Content Include="lib\BASE\BASE\data\sync\DataContext.js" />
+    <Content Include="lib\BASE\BASE\data\sync\Edm.js" />
+    <Content Include="lib\BASE\BASE\data\sync\Mutator.js" />
+    <Content Include="lib\BASE\BASE\data\testing\Address.js" />
+    <Content Include="lib\BASE\BASE\data\testing\createServices.js" />
+    <Content Include="lib\BASE\BASE\data\testing\Edm.js" />
+    <Content Include="lib\BASE\BASE\data\testing\HrAccount.js" />
+    <Content Include="lib\BASE\BASE\data\testing\HumanoidType.js" />
+    <Content Include="lib\BASE\BASE\data\testing\model\address.js" />
+    <Content Include="lib\BASE\BASE\data\testing\model\hrAccount.js" />
+    <Content Include="lib\BASE\BASE\data\testing\model\permission.js" />
+    <Content Include="lib\BASE\BASE\data\testing\model\person.js" />
+    <Content Include="lib\BASE\BASE\data\testing\model\personToPermission.js" />
+    <Content Include="lib\BASE\BASE\data\testing\model\phoneNumber.js" />
+    <Content Include="lib\BASE\BASE\data\testing\model\role.js" />
+    <Content Include="lib\BASE\BASE\data\testing\Permission.js" />
+    <Content Include="lib\BASE\BASE\data\testing\Person.js" />
+    <Content Include="lib\BASE\BASE\data\testing\PersonToPermission.js" />
+    <Content Include="lib\BASE\BASE\data\testing\PhoneNumber.js" />
+    <Content Include="lib\BASE\BASE\data\testing\PhoneNumberType.js" />
+    <Content Include="lib\BASE\BASE\data\testing\relationships\hrAccountHasManyRoles.js" />
+    <Content Include="lib\BASE\BASE\data\testing\relationships\personHasManyAddresses.js" />
+    <Content Include="lib\BASE\BASE\data\testing\relationships\personHasManyPermissions.js" />
+    <Content Include="lib\BASE\BASE\data\testing\relationships\personHasManyPhoneNumbers.js" />
+    <Content Include="lib\BASE\BASE\data\testing\relationships\personHasOneHrAccount.js" />
+    <Content Include="lib\BASE\BASE\data\testing\Role.js" />
+    <Content Include="lib\BASE\BASE\data\utils.js" />
+    <Content Include="lib\BASE\BASE\jira\EndPoint.js" />
+    <Content Include="lib\BASE\BASE\jira\JiraDataConverter.js" />
+    <Content Include="lib\BASE\BASE\jira\JiraProvider.js" />
+    <Content Include="lib\BASE\BASE\jira\JiraVisitor.js" />
+    <Content Include="lib\BASE\BASE\jira\Service.js" />
+    <Content Include="lib\BASE\BASE\mirrors\Mirror.js" />
+    <Content Include="lib\BASE\BASE\mirrors\reflect.js" />
+    <Content Include="lib\BASE\BASE\mirrors\Reflection.js" />
+    <Content Include="lib\BASE\BASE\mirrors\Type.js" />
+    <Content Include="lib\BASE\BASE\odata4\EndPoint.js" />
+    <Content Include="lib\BASE\BASE\odata4\FromServiceDto.js" />
+    <Content Include="lib\BASE\BASE\odata4\fromServiceHandlerCollection.js" />
+    <Content Include="lib\BASE\BASE\odata4\FunctionInvocation.js" />
+    <Content Include="lib\BASE\BASE\odata4\OData4DataConverter.js" />
+    <Content Include="lib\BASE\BASE\odata4\OdataAnnotation.js" />
+    <Content Include="lib\BASE\BASE\odata4\OdataIncludeVisitor.js" />
+    <Content Include="lib\BASE\BASE\odata4\ODataProvider.js" />
+    <Content Include="lib\BASE\BASE\odata4\ODataVisitor.js" />
+    <Content Include="lib\BASE\BASE\odata4\Service.js" />
+    <Content Include="lib\BASE\BASE\odata4\toCamelCasedProperties.js" />
+    <Content Include="lib\BASE\BASE\odata4\toPascalCasedProperties.js" />
+    <Content Include="lib\BASE\BASE\odata4\ToServiceDto.js" />
+    <Content Include="lib\BASE\BASE\odata4\toServiceHandlerCollection.js" />
+    <Content Include="lib\BASE\BASE\odata\convertToOdataValue.js" />
+    <Content Include="lib\BASE\BASE\query\ArrayProvider.js" />
+    <Content Include="lib\BASE\BASE\query\ArrayVisitor.js" />
+    <Content Include="lib\BASE\BASE\query\Expression.js" />
+    <Content Include="lib\BASE\BASE\query\ExpressionBuilder.js" />
+    <Content Include="lib\BASE\BASE\query\ExpressionVisitor.js" />
+    <Content Include="lib\BASE\BASE\query\IncludeVisitor.js" />
+    <Content Include="lib\BASE\BASE\query\IndexedDbVisitor.js" />
+    <Content Include="lib\BASE\BASE\query\odata.js" />
+    <Content Include="lib\BASE\BASE\query\ODataProvider.js" />
+    <Content Include="lib\BASE\BASE\query\ODataVisitor.js" />
+    <Content Include="lib\BASE\BASE\query\Provider.js" />
+    <Content Include="lib\BASE\BASE\query\Queryable.js" />
+    <Content Include="lib\BASE\BASE\query\QueryableVisitor.js" />
+    <Content Include="lib\BASE\BASE\query\SqlVisitor.js" />
+    <Content Include="lib\BASE\BASE\require\compile.js" />
+    <Content Include="lib\BASE\BASE\testing\ConsoleOutput.js" />
+    <Content Include="lib\BASE\BASE\testing\ConsoleRunner.js" />
+    <Content Include="lib\BASE\BASE\testing\TeamCityOutput.js" />
+    <Content Include="lib\BASE\BASE\testing\TestRunner.js" />
+    <Content Include="lib\BASE\BASE\time\Date.js" />
+    <Content Include="lib\BASE\BASE\time\DateEvent.js" />
+    <Content Include="lib\BASE\BASE\time\DateRange.js" />
+    <Content Include="lib\BASE\BASE\util\Guid.js" />
+    <Content Include="lib\BASE\BASE\util\invokeMethodIfExists.js" />
+    <Content Include="lib\BASE\BASE\util\invokeMethodIfExistsAsync.js" />
+    <Content Include="lib\BASE\BASE\util\PropertyBehavior.js" />
+    <Content Include="lib\BASE\BASE\web\ajax.js" />
+    <Content Include="lib\BASE\BASE\web\AjaxProvider.js" />
+    <Content Include="lib\BASE\BASE\web\animation\Animation.js" />
+    <Content Include="lib\BASE\BASE\web\animation\AnimationManager.js" />
+    <Content Include="lib\BASE\BASE\web\animation\animationStateManager.js" />
+    <Content Include="lib\BASE\BASE\web\animation\easings.js" />
+    <Content Include="lib\BASE\BASE\web\animation\ElementAnimation.js" />
+    <Content Include="lib\BASE\BASE\web\animation\ElementPathAnimation.js" />
+    <Content Include="lib\BASE\BASE\web\animation\PercentageTimeline.js" />
+    <Content Include="lib\BASE\BASE\web\animation\Timeline.js" />
+    <Content Include="lib\BASE\BASE\web\behaviors\Bindable.js" />
+    <Content Include="lib\BASE\BASE\web\behaviors\Routing.js" />
+    <Content Include="lib\BASE\BASE\web\BrowserDetect.js" />
+    <Content Include="lib\BASE\BASE\web\compileComponents.js" />
+    <Content Include="lib\BASE\BASE\web\components.js" />
+    <Content Include="lib\BASE\BASE\web\ComponentsDocument.js" />
+    <Content Include="lib\BASE\BASE\web\cookies.js" />
+    <Content Include="lib\BASE\BASE\web\CssLoader.js" />
+    <Content Include="lib\BASE\BASE\web\easings.js" />
+    <Content Include="lib\BASE\BASE\web\getCurrentPosition.js" />
+    <Content Include="lib\BASE\BASE\web\History.js" />
+    <Content Include="lib\BASE\BASE\web\HttpRequest.js" />
+    <Content Include="lib\BASE\BASE\web\isCORSEnabled.js" />
+    <Content Include="lib\BASE\BASE\web\MockAjaxProvider.js" />
+    <Content Include="lib\BASE\BASE\web\PathResolver.js" />
+    <Content Include="lib\BASE\BASE\web\queryString.js" />
+    <Content Include="lib\BASE\BASE\web\RawAjaxDataConverter.js" />
+    <Content Include="lib\BASE\BASE\web\Route.js" />
+    <Content Include="lib\BASE\BASE\web\Segue.js" />
+    <Content Include="lib\BASE\BASE\web\smoothScrollingHelper.js" />
+    <Content Include="lib\BASE\BASE\web\ui\Region.js" />
+    <Content Include="lib\BASE\BASE\web\Url.js" />
+    <Content Include="lib\BASE\Boot.js" />
+    <Content Include="lib\BASE\bowser.js" />
+    <Content Include="lib\BASE\core\effect\Animate.js" />
+    <Content Include="lib\BASE\core\effect\Scroller.js" />
+    <Content Include="lib\BASE\CryptoJS.js" />
+    <Content Include="lib\BASE\Date\fromISO.js" />
+    <Content Include="lib\BASE\Date\isValid.js" />
+    <Content Include="lib\BASE\Date\now.js" />
+    <Content Include="lib\BASE\Date\prototype\format.js" />
+    <Content Include="lib\BASE\Date\prototype\toISOString.js" />
+    <Content Include="lib\BASE\Element\prototype\css.js" />
+    <Content Include="lib\BASE\Element\prototype\empty.js" />
+    <Content Include="lib\BASE\Element\prototype\getOffset.js" />
+    <Content Include="lib\BASE\Element\prototype\observe.js" />
+    <Content Include="lib\BASE\Element\prototype\position.js" />
+    <Content Include="lib\BASE\Element\prototype\region.js" />
+    <Content Include="lib\BASE\Element\prototype\replaceWith.js" />
+    <Content Include="lib\BASE\Element\prototype\setOffset.js" />
+    <Content Include="lib\BASE\elPocoLoco\EdmDocument.js" />
+    <Content Include="lib\BASE\elPocoLoco\EntityGenerator.js" />
+    <Content Include="lib\BASE\elPocoLoco\ServiceGenerator.js" />
+    <Content Include="lib\BASE\elPocoLoco\TemplateCache.js" />
+    <Content Include="lib\BASE\FastClick.js" />
+    <Content Include="lib\BASE\Function\prototype\bind.js" />
+    <Content Include="lib\BASE\jQuery.js" />
+    <Content Include="lib\BASE\jQuery\allEasings.js" />
+    <Content Include="lib\BASE\jQuery\cookie.js" />
+    <Content Include="lib\BASE\jQuery\event\special\mousewheel.js" />
+    <Content Include="lib\BASE\jQuery\fn\animation.js" />
+    <Content Include="lib\BASE\jQuery\fn\isAnimating.js" />
+    <Content Include="lib\BASE\jQuery\fn\on.js" />
+    <Content Include="lib\BASE\jQuery\fn\plot.js" />
+    <Content Include="lib\BASE\jQuery\fn\redraw.js" />
+    <Content Include="lib\BASE\jQuery\fn\region.js" />
+    <Content Include="lib\BASE\jQuery\fn\transition.js" />
+    <Content Include="lib\BASE\jQuery\loadFile.js" />
+    <Content Include="lib\BASE\jQuery\path.js" />
+    <Content Include="lib\BASE\jQuery\support\transform.js" />
+    <Content Include="lib\BASE\jQuery\support\transition.js" />
+    <Content Include="lib\BASE\JSON.js" />
+    <Content Include="lib\BASE\LG\AjaxProvider.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\benefitsToGo\BenefitsToGoCompanyRole.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\benefitsToGo\BenefitsToGoCompanyRoleDetail.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\benefitsToGo\BenefitsToGoPersonRole.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\benefitsToGo\DataContext.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\benefitsToGo\Plan.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\benefitsToGo\PlanDetail.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\benefitsToGo\Service.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\Address.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\AgencyRole.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\App.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\AppCategory.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\Attachment.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\Authentication.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\AuthenticationFactor.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\AutomatedUserRole.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\BaseAddress.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\BaseChangeTracking.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\BaseRole.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\Company.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\CompanyAddress.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\CompanyAddressPhoneNumber.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\CompanyAddressUltiProAccount.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\CompanyDepartment.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\CompanyDivision.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\CompanyEmailAddress.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\CompanyGroup.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\CompanyName.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\CompanyPhoneNumber.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\CompanyRole.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\CompanyRoleClosureType.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\CompanyTeam.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\CompanyUltiProAccount.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\CorporateDisposalClosureType.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\Credential.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\DatabaseCredential.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\DataContext.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\DisaffiliationClosureType.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\EmailAddress.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\FullTimeEquivalent.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\GoogleAuthFactor.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\Group.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\GroupToAttachmentPermission.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\JobRole.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\JobRoleDataPoint.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\JobRoleToDepartment.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\JobRoleToDivision.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\JobRoleToTeam.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\JobRoleType.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\LdapCredential.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\LGEmployeeRole.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\LGEmployeeRoleTitle.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\LGEmployeeRoleToCompanyAddress.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\LGEmployeeRoleUltiProAccount.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\ManagementSystem.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\ManagementSystemDatabase.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\MergerClosureType.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\Note.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\PasswordFactor.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\PasswordFactorResetCode.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\PeopleGroup.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\PeopleGroupToPermission.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\PercentOfFullTimeEquivalent.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\Permission.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\PermissionGroup.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\PermissionGroupToPeopleGroup.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\PermissionGroupToPermission.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\Person.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\PersonAddress.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\PersonEmailAddress.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\PersonLdapAccount.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\PersonName.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\PersonPhoneNumber.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\PersonRole.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\PersonToAttachmentPermission.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\PersonToPeopleGroup.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\PersonToPermission.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\PersonToPermissionGroup.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\PersonUltiProAccount.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\PhoneNumber.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\ProducerRoleDataPoint.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\ProfileImageResult.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\ProfilePictureAttachment.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\Service.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\SupervisorJobRole.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\Tag.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\TAMDatabase.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\core\TAMManagementSystem.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\Detail.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\DetailMethods.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\salesExpectation\AssignedExpectedBook.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\salesExpectation\DataContext.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\salesExpectation\Expectation.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\salesExpectation\Investment.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\salesExpectation\NewExpectedBook.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\salesExpectation\RenewExpectedBook.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\salesExpectation\SalesContract.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\salesExpectation\Service.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\salesReporting\DataContext.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\salesReporting\Edm.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\salesReporting\OverviewReportFavoriteSetting.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\salesReporting\ReportSetting.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\salesReporting\SalesAppUserReportingPersonRole.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\salesReporting\Service.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\salesReporting\TheGamePeopleGroup.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\salesReporting\_oldService.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\Client.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\ClientAddress.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\ClientAttachment.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\ClientContactException.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\ClientContactPersonRole.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\ClientContactService.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\ClientNote.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\ClientNoteReminder.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\ClientPartner.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\ClientQueryProvider.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\ClientTag.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\ClientToClientTag.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\ClientUserSetting.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\DataContext.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\DenormalizedClientCreator.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\Edm.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\ExtendedClient.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\ExtendedClientDistance.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\ExtendedClientExpiring.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\ExtendedClientFollowUpDate.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\ExtendedClientLastViewed.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\ExtendedClientRevenue.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\Opportunity.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\OpportunityContestDetail.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\OpportunityStatus.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\PremiumSplit.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\SalesAppUserGoal.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\SalesAppUserPerson.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\SalesAppUserPersonRole.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\Service.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\sales\_oldService.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\survey\Answer.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\survey\Category.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\survey\DataContext.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\survey\PerformanceReviewSurveyResult.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\survey\PossibleAnswer.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\survey\PossibleAnswerSet.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\survey\Question.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\survey\SelectAnswer.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\survey\SelectQuestion.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\survey\Service.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\survey\SupervisorComment.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\survey\Survey.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\survey\SurveyResult.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\survey\TextAnswer.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\survey\TextQuestion.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\teamBuilder\Edm.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\teamBuilder\Service.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\testing\Basket.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\testing\DataContext.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\testing\Edm.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\testing\Fruit.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\testing\FruitMold.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\testing\FruitShape.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\testing\FruitToPesticide.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\testing\Pesticide.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\testing\Service.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\theGame\TheGameTeam.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\theGame\TheGameTeamName.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\theGame\TheGameTeamPoint.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\theGame\TheGameTeamToPerson.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\theGame\TheGameTeamTour.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\wellness\Activity.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\wellness\ActivityLog.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\wellness\Goal.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\wellness\WeightLog.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\wellness\WellnessLog.js" />
+    <Content Include="lib\BASE\LG\core\dataModel\wellness\WellnessRole.js" />
+    <Content Include="lib\BASE\LG\data\dataStores\createErrorFromXhr.js" />
+    <Content Include="lib\BASE\LG\data\dataStores\ODataDataStore.js" />
+    <Content Include="lib\BASE\LG\data\services\ODataService.js" />
+    <Content Include="lib\BASE\LG\JsonAjaxProvider.js" />
+    <Content Include="lib\BASE\LG\PersonProfileToolsBehavior.js" />
+    <Content Include="lib\BASE\LG\query\ApiProvider.js" />
+    <Content Include="lib\BASE\LG\rest\Service.js" />
+    <Content Include="lib\BASE\LG\ServiceError.js" />
+    <Content Include="lib\BASE\LG\ServiceResponse.js" />
+    <Content Include="lib\BASE\node\ChildActor.js" />
+    <Content Include="lib\BASE\node\Directory.js" />
+    <Content Include="lib\BASE\node\File.js" />
+    <Content Include="lib\BASE\node\futurize.js" />
+    <Content Include="lib\BASE\node\ParentActor.js" />
+    <Content Include="lib\BASE\node\postgreSql\Database.js" />
+    <Content Include="lib\BASE\node\postgreSql\DataStore.js" />
+    <Content Include="lib\BASE\node\postgreSql\Service.js" />
+    <Content Include="lib\BASE\Number\prototype\toCurrency.js" />
+    <Content Include="lib\BASE\Number\prototype\toEnumFlagString.js" />
+    <Content Include="lib\BASE\Number\prototype\toEnumString.js" />
+    <Content Include="lib\BASE\Number\prototype\withThousandsSeparator.js" />
+    <Content Include="lib\BASE\Object\create.js" />
+    <Content Include="lib\BASE\Object\keys.js" />
+    <Content Include="lib\BASE\performance.js" />
+    <Content Include="lib\BASE\Prism.js" />
+    <Content Include="lib\BASE\requestAnimationFrame.js" />
+    <Content Include="lib\BASE\service.js" />
+    <Content Include="lib\BASE\StringView.js" />
+    <Content Include="lib\BASE\String\prototype\contains.js" />
+    <Content Include="lib\BASE\String\prototype\reverse.js" />
+    <Content Include="lib\BASE\String\prototype\toCamelCase.js" />
+    <Content Include="lib\BASE\String\prototype\toDate.js" />
+    <Content Include="lib\BASE\String\prototype\toEnum.js" />
+    <Content Include="lib\BASE\String\prototype\toEnumFlag.js" />
+    <Content Include="lib\BASE\String\prototype\toHash.js" />
+    <Content Include="lib\BASE\String\prototype\toNumber.js" />
+    <Content Include="lib\BASE\String\prototype\toPascalCase.js" />
+    <Content Include="lib\BASE\String\prototype\toUrl.js" />
+    <Content Include="lib\BASE\String\prototype\trim.js" />
+    <Content Include="lib\BASE\String\trim.js" />
+    <Content Include="lib\BASE\tests\Array.prototype.empty.js" />
+    <Content Include="lib\BASE\tests\Array.prototype.orderBy.js" />
+    <Content Include="lib\BASE\tests\Array.prototype.orderByDesc.js" />
+    <Content Include="lib\BASE\tests\BASE.async.delayAsync.js" />
+    <Content Include="lib\BASE\tests\BASE.async.Future.js" />
+    <Content Include="lib\BASE\tests\BASE.collections.Hashmap.js" />
+    <Content Include="lib\BASE\tests\BASE.data.DataContext.js" />
+    <Content Include="lib\BASE\tests\BASE.data.dataStores.SqlStatementCreator.js" />
+    <Content Include="lib\BASE\tests\BASE.data.services.InMemoryService.js" />
+    <Content Include="lib\BASE\tests\BASE.jira.JiraProvider.js" />
+    <Content Include="lib\BASE\tests\BASE.odata4.EndPoint.js" />
+    <Content Include="lib\BASE\tests\BASE.odata4.FromServiceDto.js" />
+    <Content Include="lib\BASE\tests\BASE.odata4.FunctionInvocation.js" />
+    <Content Include="lib\BASE\tests\BASE.odata4.ODataDataConverter.js" />
+    <Content Include="lib\BASE\tests\BASE.odata4.ODataIncludeVisitor.js" />
+    <Content Include="lib\BASE\tests\BASE.odata4.ODataProvider.js" />
+    <Content Include="lib\BASE\tests\BASE.odata4.ODataVisitor.js" />
+    <Content Include="lib\BASE\tests\BASE.odata4.Service.js" />
+    <Content Include="lib\BASE\tests\BASE.odata4.toCamelCasedProperties.js" />
+    <Content Include="lib\BASE\tests\BASE.odata4.toPascalCasedProperties.js" />
+    <Content Include="lib\BASE\tests\BASE.odata4.ToServiceDto.js" />
+    <Content Include="lib\BASE\tests\BASE.query.OdataVisitor.js" />
+    <Content Include="lib\BASE\tests\BASE.query.Queryable.js" />
+    <Content Include="lib\BASE\tests\BASE.util.invokeMethodIfExists.js" />
+    <Content Include="lib\BASE\tests\BASE.util.invokeMethodIfExistsAsync.js" />
+    <Content Include="lib\BASE\tests\BASE.web.Animation.js" />
+    <Content Include="lib\BASE\tests\BASE.web.MockAjaxProvider.js" />
+    <Content Include="lib\BASE\tests\BASE.web.PathResolver.js" />
+    <Content Include="lib\BASE\tests\BASE.web.Url.js" />
+    <Content Include="lib\BASE\tests\node.postgreSql.DataStore.js" />
+    <Content Include="lib\BASE\tests\Number.prototype.toEnumString.js" />
+    <Content Include="lib\BASE\tests\String.prototype.contains.js" />
+    <Content Include="lib\BASE\tests\String.prototype.toCamelCase.js" />
+    <Content Include="lib\BASE\tests\String.prototype.toEnum.js" />
+    <Content Include="lib\BASE\tests\String.prototype.toEnumFlag.js" />
+    <Content Include="lib\BASE\tests\String.prototype.toPascalCase.js" />
+    <Content Include="lib\BASE\tests\toEnumFlagString.js" />
+    <Content Include="lib\BASE\tools\modelBuilder\app\components\AppMain.html" />
+    <Content Include="lib\BASE\tools\modelBuilder\app\components\layouts\List.html" />
+    <Content Include="lib\BASE\tools\modelBuilder\app\components\layouts\List.js" />
+    <Content Include="lib\BASE\tools\modelBuilder\index.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>63957</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:63957/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

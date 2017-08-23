@@ -1,0 +1,6 @@
+D:\Dustin Documents\C# Web App test\understandingScope\understandingScope\bin\Debug\understandingScope.exe.config
+D:\Dustin Documents\C# Web App test\understandingScope\understandingScope\bin\Debug\understandingScope.exe
+D:\Dustin Documents\C# Web App test\understandingScope\understandingScope\bin\Debug\understandingScope.pdb
+D:\Dustin Documents\C# Web App test\understandingScope\understandingScope\obj\Debug\understandingScope.csprojResolveAssemblyReference.cache
+D:\Dustin Documents\C# Web App test\understandingScope\understandingScope\obj\Debug\understandingScope.exe
+D:\Dustin Documents\C# Web App test\understandingScope\understandingScope\obj\Debug\understandingScope.pdb

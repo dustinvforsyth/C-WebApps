@@ -1,0 +1,12 @@
+﻿{
+  "aliases": {
+    "app-main": "AppMain.html",
+    "home-state": "HomeState.html",
+    "main-state": "states/MainState.html",
+    "toolbar": "layouts/toolbar.html",
+    "schedule-state": "states/ScheduleState.html",
+    "inventory-state": "states/InventoryState.html",
+    "newHire-state": "states/NewHireState.html",
+    "resources-state": "states/ResourcesAppsState.html"
+  }
+}

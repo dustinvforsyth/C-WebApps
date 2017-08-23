@@ -1,0 +1,6 @@
+D:\Dustin Documents\C# Web App test\ReadTextfileWhileProject\ReadTextfileWhileProject\bin\Debug\ReadTextfileWhileProject.exe.config
+D:\Dustin Documents\C# Web App test\ReadTextfileWhileProject\ReadTextfileWhileProject\bin\Debug\ReadTextfileWhileProject.exe
+D:\Dustin Documents\C# Web App test\ReadTextfileWhileProject\ReadTextfileWhileProject\bin\Debug\ReadTextfileWhileProject.pdb
+D:\Dustin Documents\C# Web App test\ReadTextfileWhileProject\ReadTextfileWhileProject\obj\Debug\ReadTextfileWhileProject.csprojResolveAssemblyReference.cache
+D:\Dustin Documents\C# Web App test\ReadTextfileWhileProject\ReadTextfileWhileProject\obj\Debug\ReadTextfileWhileProject.exe
+D:\Dustin Documents\C# Web App test\ReadTextfileWhileProject\ReadTextfileWhileProject\obj\Debug\ReadTextfileWhileProject.pdb

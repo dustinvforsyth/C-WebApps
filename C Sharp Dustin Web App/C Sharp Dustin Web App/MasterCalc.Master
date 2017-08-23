@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterCalc.master.cs" Inherits="C_Sharp_Dustin_Web_App.MasterCalc" %>
+
+<!DOCTYPE html>
+<link rel="stylesheet", href="myStyle.css" />
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Dustin's Calc page</title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+     <div id="header"><h1>This is My <asp:Label ID="currentState" runat="server" ></asp:Label> Calculator</h1></div>
+    <form id="form2" runat="server">
+    <div id="nav">
+        <asp:Button id="add" runat="server" Text="Add" OnClick="Add_Button_Click" /><br />
+        <asp:Button ID="Subract" runat="server" Text="Subtract" OnClick="Subtract_Button_Click"  /><br />
+        <asp:Button ID="Divide" runat="server" Text="Divide" OnClick="Divide_Button_Click" /><br />
+        <asp:Button ID="Multiply" runat="server" Text="Multiply" OnClick="Multiply_Button_Click" /><br />
+    </div>
+    
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    <div id="footer">
+        Copyright Dustin's project © 11/13/2015
+    </div>
+</body>
+</html>

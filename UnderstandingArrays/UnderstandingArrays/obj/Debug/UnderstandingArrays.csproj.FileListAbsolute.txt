@@ -1,0 +1,6 @@
+D:\Dustin Documents\C# Web App test\UnderstandingArrays\UnderstandingArrays\bin\Debug\UnderstandingArrays.exe.config
+D:\Dustin Documents\C# Web App test\UnderstandingArrays\UnderstandingArrays\bin\Debug\UnderstandingArrays.exe
+D:\Dustin Documents\C# Web App test\UnderstandingArrays\UnderstandingArrays\bin\Debug\UnderstandingArrays.pdb
+D:\Dustin Documents\C# Web App test\UnderstandingArrays\UnderstandingArrays\obj\Debug\UnderstandingArrays.csprojResolveAssemblyReference.cache
+D:\Dustin Documents\C# Web App test\UnderstandingArrays\UnderstandingArrays\obj\Debug\UnderstandingArrays.exe
+D:\Dustin Documents\C# Web App test\UnderstandingArrays\UnderstandingArrays\obj\Debug\UnderstandingArrays.pdb

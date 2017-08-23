@@ -1,0 +1,6 @@
+D:\Dustin Documents\C# Web App test\Variables\Variables\bin\Debug\Variables.exe.config
+D:\Dustin Documents\C# Web App test\Variables\Variables\bin\Debug\Variables.exe
+D:\Dustin Documents\C# Web App test\Variables\Variables\bin\Debug\Variables.pdb
+D:\Dustin Documents\C# Web App test\Variables\Variables\obj\Debug\Variables.csprojResolveAssemblyReference.cache
+D:\Dustin Documents\C# Web App test\Variables\Variables\obj\Debug\Variables.exe
+D:\Dustin Documents\C# Web App test\Variables\Variables\obj\Debug\Variables.pdb

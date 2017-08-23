@@ -1,0 +1,37 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DatesandTimes
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            DateTime myValue = DateTime.Now;
+            //Console.WriteLine(myValue.ToString());
+            //Console.WriteLine(myValue.ToShortDateString());
+            //Console.WriteLine(myValue.ToLongDateString());
+
+            // Console.WriteLine(myValue.AddDays(3).ToLongDateString());
+            //Console.WriteLine(myValue.AddHours(3).ToShortTimeString());
+
+            //Console.WriteLine(myValue.AddDays(-3).ToShortDateString());
+
+            Console.WriteLine(myValue.Month.ToString());
+
+
+            //DateTime myBrithday = new DateTime(1989, 12, 29);
+            //Console.WriteLine(myBrithday.ToShortDateString());
+
+            DateTime myBirthday = DateTime.Parse("12/29/1989");
+            Console.WriteLine(myBirthday);
+            TimeSpan myAge = DateTime.Now.Subtract(myBirthday);
+            Console.WriteLine(myAge.TotalDays);
+
+            Console.ReadLine(); 
+        }
+    }
+}
